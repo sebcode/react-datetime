@@ -1,12 +1,11 @@
 'use strict';
 
-var React = require('react'),
+var DOM = require('react-dom-factories'),
     createClass = require('create-react-class'),
 	moment = require('moment'),
   onClickOutside = require('react-onclickoutside')
 ;
 
-var DOM = React.DOM;
 var DateTimePickerDays = onClickOutside( createClass({
 	render: function() {
 		var footer = this.renderFooter(),

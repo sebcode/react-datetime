@@ -1,5 +1,7 @@
 'use strict';
 
+var DOM = require('react-dom-factories');
+
 var assign = require('object-assign'),
         PropTypes = require('prop-types'),
         createClass = require('create-react-class'),
@@ -401,8 +403,7 @@ var Datetime = createClass({
 	},
 
 	render: function() {
-		var DOM = React.DOM,
-			className = 'rdt' + (this.props.className ?
+		var className = 'rdt' + (this.props.className ?
                   ( Array.isArray( this.props.className ) ?
                   ' ' + this.props.className.join( ' ' ) : ' ' + this.props.className) : ''),
 			children = []

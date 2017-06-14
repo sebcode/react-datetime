@@ -1,12 +1,11 @@
 'use strict';
 
-var React = require('react'),
+var DOM = require('react-dom-factories'),
     createClass = require('create-react-class'),
 	assign = require('object-assign'),
   onClickOutside = require('react-onclickoutside')
 ;
 
-var DOM = React.DOM;
 var DateTimePickerTime = onClickOutside( createClass({
 	getInitialState: function() {
 		return this.calculateState( this.props );
